@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*, body, h1,h2,h3,h4,h5,h6,p,div,span,li,th,td,dd,dt {
+  font-family: 'Inter', sans-serif;
+}
+.App{
+    background-color:#2A363F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    div{
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+.wallpaper{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: left;
+}
+.register-container{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .img-preview{
+    border-radius: 100%;
+    width: 128px;
+    height: 128px;
+    background-color: gray;
+  }
+  .error{
+      width: 100%;
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      font-weight: normal;
+  }
+  p{
+      color: #ec65c4;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  .text-preview{
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    color: #1F2142;
+    font-weight: normal;
+    &.name{
+      font-size: 23px;
+      margin-top: 25px;
+    }
+  }
+  .avatar-uploader{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .ant-upload {
+          width: 128px;
+          height: 128px;
+        }
+  } 
+  .ant-picker{
+      width: 100%;
+  }
+}
